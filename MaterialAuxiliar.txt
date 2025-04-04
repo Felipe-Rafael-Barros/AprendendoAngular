@@ -15,3 +15,52 @@ Exemplo: cd my-first-angular-app
 
 Apos isso, parra iniciar o projeto:
 npm start
+
+caso queria adicionar o bootstrap:
+use:
+npm install bootstrap
+
+Após instalar, no angular.json procure:
+"styles": [
+  "src/styles.css"
+]
+
+e mude para:
+
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+]
+
+
+--------------
+bootstrap + TS
+
+No terminal do projeto use:
+npm install bootstrap @popperjs/core
+
+troque essas partes do angular.json:
+
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+
+
+-------------------------------------------
+               HTML PURO
+
+Não use o index.html do src. Vá em app e use o app.component.html
+
+No app.component.html você irá programar a parte html
+
+--------------------------------------------
+               CSS
+O local que cuida do CSS é o app.component.css
+
+--------------------------------------------
+               TypeScript
+O local que cuida do TS é o app.component.ts
