@@ -1,0 +1,17 @@
+Antes de tudo verifique sem tem o NODE.JS
+
+Instalar o ANGULAR CLI(Só precisa 1 vez):
+npm install -g @angular/cli
+
+Criar um novo projeto:
+ng new <project-name>
+Exemplo: ng new PrimeiroProjetoAngular
+
+Escolha o tipo: CSS,SSA, SSAA
+
+Agora no terminal mude para executar seu novo projeto:
+
+Exemplo: cd my-first-angular-app
+
+Apos isso, parra iniciar o projeto:
+npm start
